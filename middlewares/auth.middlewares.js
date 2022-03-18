@@ -1,0 +1,21 @@
+require('dotenv').config();
+const jwt = require('jsonwebtoken');
+
+module.exports = async (req, res, next) => {
+  try {
+    const token = req.headers.authorization;
+
+    if (!token) return res.status(401).json({ message: 'Token not found' });
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+
+    req.tokenData = decoded.data;
+
+    next();
+  } catch (e) {
+    // Tratamento de erro retirado da monitoria do gaspar
+    if (e.name.includes('Token')) {
+      return res.status(401).json({ message: 'Expired or invalid token' });
+    }
+    next(e);
+  }
+};
