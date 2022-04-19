@@ -17,21 +17,27 @@ Rotas desenvolvidas:
 3 - Requisição do tipo POST:  
 * '/user' = Cria um novo usuário no banco com os parâmetros __recebidos no body(corpo) da requisição__.  
 Sendo eles no formato:  
+
+```javascript
 {
 	"displayName": "Henrique",
 	"email": "henrique123@email.com",
 	"password": 1234567,
 	"image": "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftheconversation.com%2Fphysics-and-psychology-of-cats-an-improbable-conversation-176020&psig=AOvVaw3XcWd92ooaY8a_Ef6gCh7m&ust=1650433624563000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMiZrsK2n_cCFQAAAAAdAAAAABAD"
 }
+```
 > Retorna um token JWT que será utilizado para autenticar o acesso.
 
 4. Requisição do tipo POST:  
 * '/login' = Valida o login do usuário com base nos __parãmetros passados no body da requisição__.  
 Sendo eles no formato:  
+
+```javascript
 {
-	"email": "henrique123@email.com",
-	"password": 1234567
+	email: 'henrique123@email.com',
+	password: 1234567 // Password deve conter mais que 6 caracteres;
 }
+```
 > Retorna um token JWT que será utilizado para autenticar o acesso.
 
 5. Requisição do tipo GET:  
@@ -40,15 +46,19 @@ Sendo eles no formato:
 
 6 . Requisição do tipo POST:  
 * '/categories' = Cria um nova categoria no banco de dados com base nos __parâmetros recebidos no body da requisição__.  
-Sendo eles no formato:
+Sendo eles no formato:  
+
+```javascript
 {
-	"name": "Henrique"
+	name: 'Henrique',
 }
+```
 > Nescessário token recebido no login para autenticação.
 
 7. Requisição do tipo POST:  
 * '/post' = Cria um post no banco de dados com base no __parâmetros recebidos no body da requisição__.  
-Sendo eles no formato:
+Sendo eles no formato:  
+
 ```javascript
 {
 	title: 'Brasil busca o hexa em 2022',
