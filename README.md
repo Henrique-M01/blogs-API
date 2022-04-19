@@ -14,7 +14,7 @@
 6. Chai;
 7. Sinon.
 
-Rotas desenvolvidas:
+ ## Rotas desenvolvidas:
 1. Requisição do tipo GET:  
 * '/user/:id' = Retorna um usuário baseado em um id __passado pelos parâmetros da rota__. 
 > Nescessário token recebido no login para autenticação.
