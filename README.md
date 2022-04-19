@@ -7,15 +7,15 @@ Node.Js com a biblioteca Express.
 
 Rotas desenvolvidas:
 1. Requisição do tipo GET:  
-..* '/user/:id' = Retorna um usuário baseado em um id __passado pelos parâmetros da rota__. 
+* '/user/:id' = Retorna um usuário baseado em um id __passado pelos parâmetros da rota__. 
 > Nescessário token recebido no login para autenticação.
 
 2 - Requisição do tipo GET:  
-..* '/user' = Retorna os usuários cadastrados no banco.
+* '/user' = Retorna os usuários cadastrados no banco.
 > Nescessário token recebido no login para autenticação.
 
 3 - Requisição do tipo POST:  
-..* '/user' = Cria um novo usuário no banco com os parâmetros __recebidos no body(corpo) da requisição__.  
+* '/user' = Cria um novo usuário no banco com os parâmetros __recebidos no body(corpo) da requisição__.  
 Sendo eles no formato:  
 {
 	"displayName": "Henrique",
@@ -26,7 +26,7 @@ Sendo eles no formato:
 > Retorna um token JWT que será utilizado para autenticar o acesso.
 
 4. Requisição do tipo POST:  
-..* '/login' = Valida o login do usuário com base nos __parãmetros passados no body da requisição__.  
+* '/login' = Valida o login do usuário com base nos __parãmetros passados no body da requisição__.  
 Sendo eles no formato:  
 {
 	"email": "henrique123@email.com",
@@ -35,11 +35,11 @@ Sendo eles no formato:
 > Retorna um token JWT que será utilizado para autenticar o acesso.
 
 5. Requisição do tipo GET:  
-..* '/categories' = Retorna todas as categorias salvas no banco de dados.
+* '/categories' = Retorna todas as categorias salvas no banco de dados.
 > Nescessário token recebido no login para autenticação.
 
 6 . Requisição do tipo POST:  
-..* '/categories' = Cria um nova categoria no banco de dados com base nos __parâmetros recebidos no body da requisição__.  
+* '/categories' = Cria um nova categoria no banco de dados com base nos __parâmetros recebidos no body da requisição__.  
 Sendo eles no formato:
 {
 	"name": "Henrique"
@@ -47,7 +47,7 @@ Sendo eles no formato:
 > Nescessário token recebido no login para autenticação.
 
 7. Requisição do tipo POST:  
-..* '/post' = Cria um post no banco de dados com base no __parâmetros recebidos no body da requisição__.  
+* '/post' = Cria um post no banco de dados com base no __parâmetros recebidos no body da requisição__.  
 Sendo eles no formato:
 {
 	"title": "Brasil busca o hexa em 2022",
@@ -57,7 +57,7 @@ Sendo eles no formato:
 > Nescessário token recebido no login para autenticação.
 
 8. Requisição do tipo GET:  
-..* '/post' = Retorna os dados dos posts, juntamente com informações do usuário que o publicou e informações de sua categoria.
+* '/post' = Retorna os dados dos posts, juntamente com informações do usuário que o publicou e informações de sua categoria.
 > Nescessário token recebido no login para autenticação.
 
 Em contínuo desenvolvimento...
