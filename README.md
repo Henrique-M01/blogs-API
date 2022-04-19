@@ -2,11 +2,11 @@
   
   ## Contexto  
   
-	Rotas desenvolvidas pensando em um blog de post onde usuários podem públicar textos, fazer login e visualizar o post de outros usuários.
+ Rotas desenvolvidas pensando em um blog de post onde usuários podem públicar textos, fazer login e visualizar o post de outros usuários.
 
   ## Tecnologias utilizadas:
   
-1. ORM => Sequelize;
+1. ORM > Sequelize;
 2. Banco de Dados MySQL;
 3. Node.Js;
 4. Express;
