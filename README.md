@@ -1,9 +1,18 @@
-# API de BLogs
+# API de BLogs  
+  
+  ## Contexto  
+  
+	Rotas desenvolvidas pensando em um blog de post onde usuários podem públicar textos, fazer login e visualizar o post de outros usuários.
 
-Rotas desenvolvidas pensando em um blog de post onde usuários podem públicar textos, fazer login e visualizar o post de outros usuários.
-
-Desenvolvida utilizando ORM, Sequelize, Modelando Banco de Dados MySQL.
-Node.Js com a biblioteca Express.
+  ## Tecnologias utilizadas:
+  
+1. ORM => Sequelize;
+2. Banco de Dados MySQL;
+3. Node.Js;
+4. Express;
+5. Mocha;
+6. Chai;
+7. Sinon.
 
 Rotas desenvolvidas:
 1. Requisição do tipo GET:  
