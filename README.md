@@ -49,9 +49,13 @@ Sendo eles no formato:
 7. Requisição do tipo POST:  
 * '/post' = Cria um post no banco de dados com base no __parâmetros recebidos no body da requisição__.  
 Sendo eles no formato:
-| title                       | categoryIds | content                                                                  |
-| --------------------------- | ----------- | ------------------------------------------------------------------------ |
-| Brasil busca o hexa em 2022 | 1           | O Brasil entrara em campo na copa de 2022 para buscar o tao sonhado hexa |
+```javascript
+{
+	title: 'Brasil busca o hexa em 2022',
+	categoryId: 1,
+	content: 'O Brasil entrara em campo na copa de 2022 para buscar o tao sonhado hexa',
+}
+```
 > Nescessário token recebido no login para autenticação.
 
 8. Requisição do tipo GET:  
